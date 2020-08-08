@@ -2,9 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<!--
-	<script src="https://kit.fontawesome.com/*******.js" crossorigin="anonymous"></script>
--->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
 	<title>My Site</title>
 </head>
@@ -19,7 +18,14 @@
 				<li div class="nav-list-item">Profile</li>
 				<li div class="nav-list-item">Contact</li>
 			</ul>
-		</nav>
+		</nav>	
+		<div class="hamburger">
+			<div id="nav-drawer">
+      			<input id="nav-input" type="checkbox" class="nav-unshown">
+      			<label id="nav-open" for="nav-input"><span></span></label>
+      			<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+    		</div>
+    	</div>
 	    </div>
 	</header>
 		<div class="main-visual">
@@ -46,6 +52,11 @@
 					<div class="box"></div>
 					<div class="box"></div>
 				</div>
+				<div class="portfolio-box-media">
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+				</div>
 			</div>
 		</div>
 		<div class="group">
@@ -57,47 +68,95 @@
 					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
 			    </div>
 			    <div class="feature-box clearfix">
-			    	<div class="box">
+			    	<div class="featurebox">
 			    		<div class="social">
-			    			<i class=""></i>
+			    			<i class="fas fa-american-sign-language-interpreting my-size"></i>
 			    		</div>
 			    			<h3>Strength1</h3>
 			    			<div class="strength-text">
-			    			<p>Contrary to popular belief, Lorem  Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
+			    			<p>Contrary to popular belief, Lorem  Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
 			    			</div>
+			    		
 			    	</div>
-					<div class="box">
+					<div class="featurebox">
 						<div class="social">
-			    			<i class=""></i>
+			    			<i class="fas fa-basketball-ball my-size"></i>
 			    		</div>
 			    			<h3>Strength2</h3>
 			    			<div class="strength-text">
-			    			<p>Contrary to popular belief, Lorem  Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
+			    			<p>Contrary to popular belief, Lorem  Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
 			    			</div>
 					</div>
-					<div class="box">
+					<div class="featurebox">
 						<div class="social">
-			    			<i class=""></i>
+			    			<i class="fas fa-bone my-size"></i>
 			    		</div>
 			    			<h3>Strength3</h3>
 			    			<div class="strength-text">
-			    			<p>Contrary to popular belief, Lorem  Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
+			    			<p>Contrary to popular belief, Lorem  Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
 			    			</div>
 					</div>
 			    </div>
 		  	</div>
 		</div>
 		<div class="group">
-		  <div class="container">
-		  </div>
+		  	<div class="profile">
+		  		<h2>Profile</h2>
+		  		<div class="main-text">
+		  			<p>It is a long established fact that a reader will be distracted by the readable<br>
+						content of a page when looking at its layout.<br>
+						The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+				</div>
+				<div class="profile-box clearfix">
+					<div class="left-box">
+						<div class="img-man">
+							<img src="img/my-icon.jpg">
+					    </div>
+				 	</div>
+				  	<div class="right-box">
+						<div class="myname">
+							<h3>MyName</h3>
+							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 			Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at 			Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+					    </div>
+					    <div class="myskills">
+					    	<h3>MySkills</h3>
+					    	<p>HTML/CSS,JavaScript,JQuery,PhotoShop</p>
+						</div>	
+				    </div>
+		  		</div>
+			</div>
 		</div>
 		<div class="group">
-		  <div class="container">
-		  </div>
-		</div>
+		    <div class="contact">
+		    	<h2>Contact</h2>
+		    	<div class="main-text">
+		    		<p>It is a long established fact that a reader will be distracted by the readable<br>
+						content of a page when looking at its layout.<br>
+						The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+		    	</div>
+		    	<div class="contact-box clearfix">
+		    		<div class="box">
+		    				<h3 class="mail">Mail</h3>
+		    				<p class="mail-address"><a href="mail:">xxx@xxx.com</a></p>
+		    				<h3 class="tel">Tel</h3>
+		    				<p class="tel-number"><a href="tel:">000-0000-0000</a></p>
+		        	</div>
+		        	<div class="box social-box">
+		        			<div class="social social-sns">
+		        			<h3 class="sns">SNS</h3>
+		        			<i class="fab fa-facebook-square facebook"></i>
+		        			<i class="fab fa-twitter-square twitter"></i>
+		        			<span class="insta">
+		        			<i class="fab fa-instagram instagram"></i>
+		        		    </span>
+		        			</div>
+		        	</div>
+		        </div>
+			</div>
+	    </div>
 	  </div>
 	<footer>
-
+		<p>©2020 WebCamp</p>
 	</footer>
 </body>
 </html>

@@ -134,9 +134,19 @@ h2:before {
 	padding: 90px 0;
 	text-align: center;
 }
-.feature-box .box {
+.featurebox {
 	width: 320px;
+	margin-right: 10px;
 	float: left;
+}
+.featurebox:last-child {
+	margin-right: 0;
+}
+.featurebox .social {
+	display: block;
+}
+.my-size {
+	font-size: 60px;
 }
 h3 {
 	font-size: 20px;
@@ -144,10 +154,305 @@ h3 {
 	text-align: center;
 	padding: 10px 0 10px;
 }
-.social {
-	
-}
 .strength-text {
 	font-size: 16px;
 	color: #000000;
+	text-align: left;
+}
+.profile {
+    width: 1024px;
+	margin: 0 auto;
+	padding: 90px 0;
+	text-align: center;
+}
+.profile .left-box {
+	width: 512px;
+	float: left;
+}
+.img-man img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+
+}
+.profile .right-box {
+	width: 512px;
+	float: left;
+}
+.myname h3, .myname p, .myskills h3, .myskills p {
+	text-align: left;
+}
+.myname h3, .myskills h3 {
+	padding-bottom: 5px;
+}
+.myname p {
+	padding-bottom: 20px;
+}
+.contact {
+    width: 800px;
+	margin: 0 auto;
+	padding: 90px 0;
+	text-align: center;
+}
+.contact-box .box {
+	width: 400px;
+	float: left;
+	padding-left: 140px;
+}
+.mail, .mail-address, .tel, .tel-number, .sns {
+	text-align: left;
+}
+.mail, .tel {
+	padding-bottom: 5px;
+}
+.mail-address {
+	padding-bottom: 20px;
+}
+.social-box {
+	position: relative;
+}
+.social-sns {
+	position: absolute;
+}
+.facebook {
+	color: blue;
+	font-size: 50px;
+	margin-right: 20px;
+}
+.twitter {
+	color: skyblue;
+	font-size: 50px;
+	margin-right: 20px;
+}
+.instagram {
+	font-size: 50px;
+}
+.insta {/*アイコンの背景*/
+  position: relative;/*相対配置*/
+  display: inline-block;
+  width: 45px;/*幅*/
+  height: 45px;/*高さ*/
+  vertical-align: -4.5px;/*垂直中央に*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  border-radius: 8px;/*角丸に*/
+}
+
+.insta:before {/*グラデーションを重ねるため*/
+  content: '';
+  position: absolute;/*絶対配置*/
+  top: 24px;/*ずらす*/
+  left: -18px;/*ずらす*/
+  width: 70px;/*グラデーションカバーの幅*/
+  height: 70px;/*グラデーションカバーの高さ*/
+  background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+  background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
+}
+
+.fa-instagram {/*アイコン*/
+  color: #FFF;/*白に*/
+  position: relative;/*z-indexを使うため*/
+  z-index: 2;/*グラデーションより前に*/
+  font-size: 40px;/*アイコンサイズ*/
+  top: 2.5px;/*上下にずらす*/
+  left: 0.5px;/*左右にずらす*/
+}
+footer {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #EC715F;
+}
+footer p {
+	color: #FAFAFA;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {  
+	header {
+		height: 50px;
+    }
+	.header {
+		width: 90%;
+	}
+	.tytle img {
+		width: 120px;
+		height: 50px;
+	}
+	nav {
+		display: none;
+	}
+	/*　ハンバーガー　*/
+	.hamburger {
+		display: block;
+		padding: 13px 20px 0 0;
+	}
+	#nav-drawer {
+  		position: relative;
+	}
+	/*チェックボックス等は非表示に*/
+	.nav-unshown {
+  		display:none;
+	}
+	/*アイコンのスペース*/
+	#nav-open {
+  		display: inline-block;
+  		width: 30px;
+  		height: 22px;
+  		vertical-align: middle;
+	}
+	/*ハンバーガーアイコンをCSSだけで表現*/
+	#nav-open span, #nav-open span:before, #nav-open span:after {
+  		position: absolute;
+  		right: 0px;
+  		height: 3px;/*線の太さ*/
+  		width: 25px;/*長さ*/
+  		border-radius: 3px;
+  		background: #FAFAFA;
+  		display: block;
+  		content: '';
+  		cursor: pointer;
+	}
+	#nav-open span:before {
+  		bottom: -8px;
+	}
+	#nav-open span:after {
+  		bottom: -16px;
+	}
+	/*閉じる用の薄黒カバー*/
+	#nav-close {
+  		display: none;/*はじめは隠しておく*/
+  		position: fixed;
+  		z-index: 99;
+  		top: 0;/*全体に広がるように*/
+  		left: 0;
+  		width: 100%;
+  		height: 100%;
+  		background: black;
+  		opacity: 0;
+  		transition: .3s ease-in-out;
+	}
+	/*中身*/
+	#nav-content {
+  		overflow: auto;
+  		position: fixed;
+  		top: 0;
+  		left: 0;
+  		z-index: 9999;/*最前面に*/
+  		width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  		max-width: 330px;/*最大幅（調整してください）*/
+  		height: 100%;
+  		background: #fff;/*背景色*/
+  		transition: .3s ease-in-out;/*滑らかに表示*/
+  		-webkit-transform: translateX(-105%);
+  		transform: translateX(-105%);/*左に隠しておく*/
+	}
+	/*チェックが入ったらもろもろ表示*/
+	#nav-input:checked ~ #nav-close {
+  		display: block;/*カバーを表示*/
+  		opacity: .5;
+	}
+	#nav-input:checked ~ #nav-content {
+  		-webkit-transform: translateX(0%);
+  		transform: translateX(0%);/*中身を表示（右へスライド）*/
+  		box-shadow: 6px 0 25px rgba(0,0,0,.15);
+	}
+	.main-visual {
+		background-image: url(img/code.png);
+	}
+	.main-visual-text {
+		width: 90%;
+	}
+	.main-visual-text h1 {
+		font-size: 40px;
+	}
+	.main-visual-text p {
+		font-size: 18px;
+	}
+	.portfolio {
+    	width: 90%;
+	}
+	.portfolio-box .box {
+		display: none;
+	}
+	.portfolio-box-media .box {
+		width: 300px;
+		height: 250px;
+		background-size: cover;
+		background-position: center;
+		margin: 0 auto;
+	}
+	.portfolio-box-media .box:nth-child(1) {
+		background-image: url(img/websuku.png);
+		margin-bottom: 10px;
+	}
+	.portfolio-box-media .box:nth-child(2) {
+		background-image: url(img/webcamp.png);
+		margin-bottom: 10px;
+	}
+	.portfolio-box-media .box:nth-child(3) {
+		background-image: url(img/webcamp-mother.png);
+	}
+	.feature {
+    	width: 90%;
+	}
+	.featurebox {
+		margin: 0 auto;
+		margin-bottom: 10px;
+		float: none;
+	}
+	.featurebox:last-child {
+		margin-bottom: 0;
+		margin-right: auto;
+	}
+	.profile {
+    	width: 90%;
+	}
+	.profile .left-box {
+		width: 100%;
+		float: none;
+	}
+	.profile .right-box {
+		width: 100%;
+		float: none;
+	}
+	.img-man {
+		margin-bottom: 20px;
+	}
+	.myname h3,.myname p, .myskills h3, .myskills p {
+		text-align: center;
+	}
+	.contact {
+    	width: 90%;
+	}
+	.contact-box .box {
+		width: 100%;
+		float: none;
+		padding-left: 0;
+	}
+	.mail, .mail-address, .tel, .tel-number, .sns {
+		text-align: center;
+	}
+	.social-box {
+		position: static;
+	}
+	.social-sns {
+		position: static;
+	}
+	.facebook {
+		margin-right: 8px;
+	}
+	.twitter {
+		margin-right: 8px;
+	}
 }
